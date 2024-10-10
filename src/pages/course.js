@@ -1,0 +1,248 @@
+// <!DOCTYPE html>
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta
+//       name="viewport"
+//       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+//     <link rel="stylesheet" href="../styles/reset.css" />
+//     <link rel="stylesheet" href="../styles/style.css" />
+//     <title>Explore Our Courses - Tech Space Academy</title>
+
+//     <link
+//       rel="stylesheet"
+//       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+//     <meta
+//       name="description"
+//       content="Explore our diverse range of programming courses at Tech Space Academy. From Python to Game Development, start your coding journey with us today!" />
+//     <meta
+//       name="keywords"
+//       content="coding, programming, courses, Python, Web Development, Game Development, Photoshop, Scratch, Robotics" />
+//     <meta name="author" content="Tech Space Academy" />
+
+//     <meta
+//       property="og:title"
+//       content="Explore Our Courses - Tech Space Academy" />
+//     <meta
+//       property="og:description"
+//       content="Discover a variety of programming courses tailored for all skill levels at Tech Space Academy, from beginner to advanced." />
+//     <meta
+//       property="og:image"
+//       content="https://raw.githubusercontent.com/astarta16/tech-space/main/static/images/tech-space.jpg" />
+//     <meta
+//       property="og:url"
+//       content="https://astarta16.github.io/tech-space/static/pages/course.html" />
+//     <meta property="og:type" content="website" />
+//   </head>
+//   <body>
+//     <header class="header">
+//       <nav class="navbar container">
+//         <a href="../../index.html" class="nav-logo">TechSpace.</a>
+//         <ul class="nav-menu">
+//           <li class="nav-item">
+//             <a href="../../index.html" class="nav-link">მთავარი</a>
+//           </li>
+//           <li class="nav-item">
+//             <a href="#" class="nav-link">კურსები</a>
+//           </li>
+//           <li class="nav-item">
+//             <a href="./about.html" class="nav-link">მიზანი</a>
+//           </li>
+//           <li class="nav-item">
+//             <a href="./blog.html" class="nav-link">ბლოგი</a>
+//           </li>
+//           <li class="nav-item">
+//             <button class="btn-hover color-btn" onclick="openModal()">
+//               შესვლა
+//             </button>
+//           </li>
+//         </ul>
+//         <div class="hamburger">
+//           <span class="bar"></span>
+//           <span class="bar"></span>
+//           <span class="bar"></span>
+//         </div>
+//       </nav>
+//     </header>
+
+//     <div id="loginModal" class="modal">
+//       <div class="modal-content">
+//         <span class="close" onclick="closeModal()">&times;</span>
+//         <h2>შესვლა</h2>
+//         <form>
+//           <div class="input-group">
+//             <label for="email">შეიყვანე იმეილი:</label>
+//             <input
+//               type="email"
+//               id="email"
+//               name="email"
+//               required
+//               autocomplete="email" />
+//           </div>
+
+//           <div class="input-group">
+//             <label for="password">შეიყვანე პაროლი</label>
+//             <input
+//               type="password"
+//               id="password"
+//               name="password"
+//               required
+//               autocomplete="current-password" />
+//           </div>
+
+//           <button type="submit" class="log-button">შესვლა</button>
+//         </form>
+//         <p class="modal-footer">
+//           არ გაქვს ექაუნთი?
+//           <a href="./register.html">დარეგისტრირდი</a>
+//         </p>
+//       </div>
+//     </div>
+
+//     <main>
+//       <section>
+//         <div class="image-container">
+//           <img
+//             src="../images/6892036.jpg"
+//             alt="Course Cover"
+//             class="cover-image" />
+//           <div class="centered-text">
+//             განავითარე შენი ცოდნა და უნარები ჩვენს კურსებთან ერთად!
+//             <div>
+//               <button class="register-button">
+//                 <a href="./register.html" class="register-text"
+//                   >დარეგისტრირდი</a
+//                 >
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       <section>
+//         <div class="container">
+//           <div class="courses-section">
+//             <h2 class="courses-title">კურსების კატალოგი</h2>
+//             <div class="courses-grid">
+//               <div class="course-card">
+//                 <img src="../images/python.png" alt="Python" />
+//                 <div class="course-info">
+//                   <h3>პითონი</h3>
+//                   <p>
+//                     მარტივი და მოქნილი პროგრამირების ენა, რომელიც პოპულარულია
+//                     ვებ-განვითარებაში, მონაცემთა მეცნიერებაში და
+//                     ავტომატიზაციაში.გამოირჩევა სიმარტივითა და კოდის
+//                     გამჭვირვალობით. იგი განკუთვნილია როგორც დამწყებთათვის, ასევე
+//                     პროფესიონალებისთვის
+//                   </p>
+//                   <a href="#" class="course-link">შეიტყვე მეტი</a>
+//                 </div>
+//               </div>
+
+//               <div class="course-card">
+//                 <img src="../images/web.png" alt="Web Development" />
+//                 <div class="course-info">
+//                   <h3>ვებ დეველოპმენტი</h3>
+//                   <p>
+//                     ვებ დეველოპმენტი არის ვებგვერდებისა და ვებაპლიკაციების
+//                     შექმნის პროცესი, რომელიც მოიცავს დიზაინს, კოდირებას და
+//                     სერვერების მართვას, რაც აუცილებელია ციფრულ სამყაროში
+//                     წარმატებისთვის. შეისწავლე HTML, CSS, JavaScript
+//                   </p>
+//                   <a href="#" class="course-link">შეიტყვე მეტი</a>
+//                 </div>
+//               </div>
+
+//               <div class="course-card">
+//                 <img src="../images/game.png" alt="Game Development" />
+//                 <div class="course-info">
+//                   <h3>თამაშების აწყობა</h3>
+//                   <p>
+//                     კურსი გაძლევთ შესაძლებლობას, ისწავლოთ თამაშების დიზაინისა და
+//                     განვითარების საფუძვლები, პროგრამირების ენები და
+//                     ინსტრუმენტები, რაც დაგეხმარებათ შექმნათ ინტერაქტიული, 2D და
+//                     3D საინტერესო და ლოგიკური თამაშები.
+//                   </p>
+//                   <a href="#" class="course-link">შეიტყვე მეტი</a>
+//                 </div>
+//               </div>
+
+//               <div class="course-card">
+//                 <img src="../images/photoshop.png" alt="Photoshop" />
+//                 <div class="course-info">
+//                   <h3>ფოტოშოპი</h3>
+//                   <p>
+//                     Photoshop არის გრაფიკული რედაქტირების პროგრამა, რომელიც
+//                     გამოიყენება სურათების დამუშავებისთვის, დიზაინის შექმნისთვის
+//                     და ფოტომანიპულაციებისთვის. ის გთავაზობთ მრავალფუნქციურ
+//                     ინსტრუმენტებს, რაც საშუალებას გაძლევთ პროფესიონალურად და
+//                     კრეატიულად იმუშაოთ ვიზუალურ მასალაზე adobe XD პროგრამის
+//                     დახმარებით.
+//                   </p>
+//                   <a href="#" class="course-link">შეიტყვე მეტი</a>
+//                 </div>
+//               </div>
+
+//               <div class="course-card">
+//                 <img src="../images/scratch.png" alt="Scratch" />
+//                 <div class="course-info">
+//                   <h3>ვიზუალური პროგრამირება</h3>
+//                   <p>
+//                     Scratch არის ვიზუალური პროგრამირების ენა, რომელიც
+//                     სპეციალურად შექმნილია ბავშვებისთვის 7-10 წლამდე და
+//                     დამწყებთათვის.მისი მეშვეობით, მომხმარებლებს შეუძლიათ შექმნან
+//                     ანიმაციები, თამაშები და ინტერაქტიული ისტორიები მარტივად,
+//                     კოდის ბლოკების გადაადგილებით და ლოგიკური კავშირებით ბლოკებს
+//                     შორის.
+//                   </p>
+//                   <a href="#" class="course-link">შეიტყვე მეტი</a>
+//                 </div>
+//               </div>
+
+//               <div class="course-card">
+//                 <img src="../images/robotic.png" alt="DevOps" />
+//                 <div class="course-info">
+//                   <h3>რობოტიკა</h3>
+//                   <p>
+//                     რობოტიკა არის მეცნიერების დარგი, რომელიც ეხება რობოტების
+//                     შექმნას, პროგრამირებას და გამოყენებას, აერთიანებს მექანიკას,
+//                     ელექტრონიკასა და პროგრამირებას სხვადასხვა ამოცანების
+//                     შესასრულებლად.რობოტიკა გამოიყენება მრავალი სფეროში, მათ
+//                     შორის წარმოებაში, სამედიცინოში, განათლებასა და ყოველდღიურ
+//                     ცხოვრებაში.
+//                   </p>
+//                   <a href="#" class="course-link">შეიტყვე მეტი</a>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//     </main>
+
+//     <footer>
+//       <div class="footer-container container">
+//         <a href="#" class="nav-logo">TechSpace.</a>
+//         <div class="footer-content">
+//           <p>დაგვიკავშირდით: +995 23 12 23</p>
+//         </div>
+//         <div class="social-media">
+//           <a href="https://facebook.com">
+//             <img src="../images/facebook.png" alt="Facebook" />
+//           </a>
+//           <a href="https://instagram.com">
+//             <img src="../images/instagram.png" alt="Instagram" />
+//           </a>
+//           <a href="https://tiktok.com">
+//             <img src="../images/tik-tok.png" alt="TikTok" />
+//           </a>
+//         </div>
+//       </div>
+//     </footer>
+
+//     <script src="../js/faq.js"></script>
+//     <script src="../js/modal.js"></script>
+//     <script src="../js/navigation.js"></script>
+//     <script src="../js/validation.js"></script>
+//   </body>
+// </html>

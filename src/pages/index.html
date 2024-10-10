@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./static/styles/reset.css" />
+    <link rel="stylesheet" href="./static/styles/style.css" />
+    <title>Tech Space Website - Empowering Your Tech Journey</title>
+    <meta
+      name="description"
+      content="Join Tech Space to advance your tech career with expert instructors and flexible learning paths. Discover courses in web development, data science, and more!" />
+    <meta
+      name="keywords"
+      content="tech education, online courses, programming, web development, data science, expert instructors, tech community" />
+    <meta name="author" content="Nini Gedeshuri" />
+    <meta
+      property="og:title"
+      content="Tech Space Website - Empowering Your Tech Journey" />
+    <meta
+      property="og:description"
+      content="Empower your tech journey at Tech Space with our expert-led courses and vibrant community. Start learning today!" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/astarta16/tech-space/main/static/images/tech-space.jpg" />
+
+    <meta property="og:url" content="https://astarta16.github.io/tech-space/" />
+
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#" class="nav-logo">TechSpace.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">მთავარი</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/course.html" class="nav-link">კურსები</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/about.html" class="nav-link">მიზანი</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/blog.html" class="nav-link">ბლოგი</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-hover color-btn" onclick="openModal()">
+              შესვლა
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>შესვლა</h2>
+        <form>
+          <div class="input-group">
+            <label for="email">შეიყვანე იმეილი</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">შეიყვანე პაროლი</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="log-button">შესვლა</button>
+        </form>
+        <p class="modal-footer">
+          არ გაქვს ექაუნთი?
+          <a href="./static/pages/register.html">დარეგისტრირდი</a>
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>მოგესალმებით TechSpace-ის სამყაროში!</h1>
+          <p>დაისახე დიდი მიზნები, მიაღწიე მეტს: ჩვენ ვქმნით მომავალს ერთად!</p>
+          <a href="./static/pages/course.html" class="cta-button">კურსები</a>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <h2>რატომ ჩვენ?</h2>
+        <div class="features-container">
+          <div class="feature">
+            <h3>პროფესიონალიზმი და გამოცდილება</h3>
+            <p>
+              ჩვენ ვართ გუნდი, რომელიც აერთიანებს პროფესიონალებს სხვადასხვა
+              ტექნოლოგიური სფეროდან. ჩვენი გამოცდილება უზრუნველყოფს ხარისხიან
+              მომსახურებას და წარმატებულ შედეგებს.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>ინოვაცია და პროგრესი</h3>
+            <p>
+              ვენ მუდმივად ვნერგავთ უახლეს ტექნოლოგიებსა და მეთოდებს, რაც
+              საშუალებას გვაძლევს შევქმნათ მომავლისთვის მზად არსებული პროექტები.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>პარტნიორობა და ნდობა</h3>
+            <p>
+              ჩვენთვის მნიშვნელოვანია გრძელვადიანი ურთიერთობები ჩვენს
+              მომხმარებლებთან. ჩვენ ვამყარებთ პარტნიორულ ურთიერთობას, რომელიც
+              დაფუძნებულია ნდობაზე, გამჭვირვალობაზე და მუდმივ მხარდაჭერაზე.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container container">
+        <a href="#" class="nav-logo">TechSpace.</a>
+        <div class="footer-content">
+          <p>დაგვიკავშირდით: +995 232 122 231</p>
+        </div>
+        <div class="social-media">
+          <a href="https://facebook.com">
+            <img src="./static/images/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://instagram.com">
+            <img src="./static/images/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://tiktok.com">
+            <img src="./static/images/tik-tok.png" alt="TikTok" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./static/js/modal.js"></script>
+    <script src="./static/js/advice.js"></script>
+    <script src="./static/js/blog.js"></script>
+    <script src="./static/js/faq.js"></script>
+    <script src="./static/js/navigation.js"></script>
+    <script src="./static/js/validation.js"></script>
+  </body>
+</html>
